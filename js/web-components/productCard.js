@@ -48,21 +48,20 @@ class ProductCard extends HTMLElement {
         this.shadow.innerHTML = `
         <style>
         .product-item {
-            border: 1px solid var(--lightBlueGrey);
-            border-radius: 1vh;
-            display: flex;
-            flex-direction: column;
-            background-color: var(--whiteBlueGrey);
-            transition: 0.7s;
-            padding: 1em;
-            margin: 2em 2em;
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            height: 300px;
+            margin: 1rem;
+            position: relative;
+            width: 300px;
         }
         button {
 
         }
         .product-item:hover {
-            box-shadow: 2px 2px var(--lightSecondary);
-            transform: translateY(-4px, -4px);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         }
         
         .product-image-container {
@@ -97,7 +96,6 @@ class ProductCard extends HTMLElement {
         }
         
 button {
-    margin-top: 1em;
     outline: none;
     width: 100%;
     padding: 0.75em;
