@@ -19,7 +19,7 @@ startOverBtn.addEventListener("click", (e) => {
     location.reload();
 });
 cartInfo.addEventListener("click", (e) => {
-    window.scrollTo(0, 3000);
+    window.scrollTo(0, 9000);
 });
 doneBtn.addEventListener("click", (e) => {
     console.log({
