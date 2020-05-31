@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <title>network-leads-home-assigmnet</title>
+  </head>
+  <body>
+    <nav>
+      <h1>My Shopping List</h1>
+      <div class="cart-icon-contanier">
+        <div id="pill" class="pill show">0</div>
+        <button id="cart-info">
+          <i  class="fas fa-shopping-cart"></i>
+        </button>
+      <div>
+    </nav>
+    <div id="cart" class="cart">
+
+    </div>
+    <div  class="app-container">
+      <form>
+        <select name="cars" id="categories" form="carform">
+          <option value="all">show all categories</option>
+        </select>
+        <input id="search-bar" type="text" placeholder="search" />
+      </form>
+      <h3>Product Listing</h3>
+     <div id="ProductListingContanier" class="product-listing-container">
+    </div>
+    <div class="pagination" id="pages"></div>
+      <h3>Shoping List</h3>
+          <div class="cart-container">
+       <div class="container">
+      <div id="cartList">
+      <h4>Cart <span class="price"><i class="fa fa-shopping-cart"></i></span></h4>
+       </div>
+       <br/>
+       <br/>
+      <hr>
+       <br/>
+       <br/>
+      <p>Total Price: <label id="cart-total-price">0</label>
+      <p>Total items: <label id="cart-total-items">0</label>
+    </div>
+      <div class="tool-bar">
+        <button id="doneBtn" class="primary-btn">Done</button>
+        <button id="startOverBtn" class="light-btn">Start Over</button>
+    </div>
+    
+      </div>
+    <script type="module" src="js/web-components/productCard.js"></script>
+    <script type="module" src="js/web-components/cartItems.js"></script>
+    <script type="module" src="js/main.js"></script>
+  
+  </body>
+</html>
